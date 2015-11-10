@@ -1,0 +1,131 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.jumbotron {
+	margin-bottom: 0;
+	background-image: url('pics/GPS_Blur_Crop2.jpg');
+/*	background-attachment: fixed;*/
+	background-size: cover;
+	height: 100vh;
+    margin-top: -50px;
+    margin-bottom: -45px;
+    
+}
+
+.jumbotron h1 {
+	font-family: 'News Cycle', sans-serif;
+	color: white;
+	text-shadow: 2px 2px 11px #000000;
+	margin-bottom: 0px;
+}
+
+.jumbotron p {
+	font-family: 'News Cycle', sans-serif;
+	color: white; 
+	font-size: 24px;
+	text-shadow: 2px 2px 5px #000000;
+	position: relative;
+	bottom: 4px;
+	left: 20px;
+}
+
+#object {
+	margin-top: 15%;
+	visibility: hidden;
+	margin-bottom: 500px;
+}
+.contents {
+	background-color: maroon;
+	padding: 30px;
+	margin-bottom: 20px;
+}
+
+.contents li {
+	display: inline;
+	text-align: center;
+	margin: 10%;
+	font-family: 'News Cycle', sans-serif;
+	font-size: 19px;
+	color: white;
+}
+
+ul {
+	text-align: center;
+}
+
+#about {
+	background-color: #FFFFEA;
+    vertical-align: middle;
+}
+
+.Background {
+	text-align: center;
+    position: relative;
+	vertical-align: middle;
+    padding-bottom: 20px;
+}
+
+.row {
+    width: 100%;
+}
+.col-md-4 {
+	height: 250px;
+    display: table;
+}
+
+.row p {
+    display: table-cell;
+	vertical-align: middle;
+	margin: auto;
+}
+
+.Interests {
+	text-align: center;
+	margin: auto;
+}
+
+.col-md-8 {
+	height: 250px;
+    display: table;
+}
+
+#MyInterests {
+    padding: 0 80px;
+    vertical-align: middle;
+}
+
+.experience {
+    background-image: url(pics/IMG_0265_b2.JPG);
+    background-attachment: fixed;
+    background-size: cover;
+	height: 100vh;
+    text-align: center;
+    margin: 0;
+}
+.experience img {
+    border-radius: 172.5px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.experience h1 {
+    padding-top: 50px;
+}
+footer {
+  padding: 10px;
+  background-color: maroon;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+footer p {
+  text-align: right;
+  color: white;
+  display:inline;
+  float:right;
+  margin-top: 7px; 
+}
