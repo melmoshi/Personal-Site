@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+      
     <meta name="description" content="">
     <meta name="author" content="">
+      
     <link rel="icon" href="../../favicon.ico">
 
     <title>Melanie Wagar</title>
@@ -18,8 +20,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="custom.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron.css" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -27,10 +27,68 @@
 
     <!-- Animation styles for this template -->
     <link rel="stylesheet" href="css/animations.css">
+      
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      
+      <!-- Google Font Source Sans Pro -->
+      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
  
   </head>
 
+    
+    
+    
+    
+    
+    
   <body>
+      
+                <!---------------------------------->
+                <!---------------NAVBAR-------------->
+                <!---------------------------------->
+      
+      
+  <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" id="name" href="#page-top">  </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Academia">Academic Bacground</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Interests">Interests</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#Contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+      
+      <!--End NavBar-->
+      
       
         <!-- Main jumbotron-->
     <div class="jumbotron">
@@ -38,6 +96,16 @@
         <div id="object" class="fadeIn">
           <h1>Melanie Wagar</h1>
           <p>B.Sc. Environmental Science</p>
+    <!-- ICONS  -->
+            <ul class="list-inline spaced">
+                <li><a href="https://ca.linkedin.com/in/mjwagar" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>                        </li>
+                <li><a href="resume.pdf" target="_blank" title="Resume" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');"><i class="fa fa-file-text-o fa-3x"></i></a>
+                </li>
+                <li><a href="mailto:melaniejwagar@gmail.com" title="Email me" alt="Email Me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
+                </li>
+            </ul>
+            <i class="fa fa-angle-down fa-5x"></i>
+    <!-- End Icons-->
         </div>
       </div>
     </div>
@@ -45,13 +113,9 @@
 
       
         <!--Contents-->
-  <div class="contents">
-    <ul>
-    <a><li>ABOUT</li></a>
-    <a><li>EXPERIENCE</li></a>
-    <a><li>CONTACT</li></a>
-    </ul>
-  </div> 
+  
+      
+      
         <!--End Contents-->
       
                 <!---------------------------------->
@@ -61,36 +125,48 @@
         <!--Top Row "About" Section-->
     <div class="container" div id="about">
 
-    <div class="Background">
-    <h3>Background</h3>
+    <div class="Aboutme">
+    <h3>About Me</h3>
       <div class="row">
-        <div class="col-md-4">
-          <img src="pics/poster.jpg" height="250px">
-        </div>
-
-        <div class="col-md-4">
-          <p>As a passionate Environmental Scientist with a diverse                    background, I bring to the table experience in ecological                research, water sampling and testing, and GIS based                     conservation analysis. <br> <br> I've worked with                       research and field work groups in Canada and Sweden, and                currently work in a start-up waste water lab in Northern                Alberta.</p>
+          <div class="col-sm-1"></div>
+        <div class="col-md-10">
+            <p>I'm a passionate Environmental Scientist with a diverse                    background in <br> <span id="focus">ecological research, water sampling and monitoring, and GIS based conservation analysis. </span> <br> <br> I've worked with research and field work groups in both Canada and Sweden, and currently work in an environmental water laboratory in Northern Alberta.</p>
        </div>
-
-       <div class="col-md-4">
-           <p><b>Bachelor of Science</b> <br> Environmental Science <br> Mount Allison University <br> <br> <b>Candidate for Bachelor of Applied Technology</b><br> Geographic Information Systems<br> SAIT Polytechnic </p>
-       </div>
+          <div class="col-sm-1"></div>
       </div>
     </div>
         <!--/Top Row-->
+          
+        
+        <!--Middle Row "Education" Section-->
+
+    <div class="Education">
+    <h3>Academic Background</h3>
+      <div class="row">
+          <div class="col-md-4 school">
+              <p><span class="title">Bachelor of Science</span> <br> <span id="major"><b>Environmental Science</b> </span> <br> Mount Allison University <br><br> Geography and Environmental Society VP <br> YMCA Student Volunteer for Disabled Children <br> Women's Varsity Soccer Team</p>
+       </div>
+        <div class="col-md-4 school">
+            <p> <span class="title"> <span id="small">Candidate for <br> </span>Bachelor of Applied Technology</span><br> <span id="major"><b>Geographic Information Systems</b> </span><br> SAIT Polytechnic <br><br> B.GIS Student Club President <br> Opus Stewart Weir Scholarship <br> Integrated Informatics Scholarship <br><br> <span id="hireme"> Currently looking for a  practicum opportunity </span><br><br> </p>
+       </div>
+          <div class="col-md-4">
+          <img src="pics/poster.jpg" height="250px">
+        </div>
+      </div>
+    </div>
+        <!--/Middle Row-->    
+        
 
         <!--Bottom Row "About" Section-->
     <div class="Interests">
     <h3>Interests</h3>
       <div class="row">
-
-        <div class="col-md-8" id="MyInterests">
-          <p> I hope to work in a challenging environment which involves teamwork, analytical problem solving, hands-on solutions, and promotes personal growth and skill development <br> <br> My main interests revolve around conservation, ecological sensitivities, geomatics, and using geographical patterns to solve environmental issues.  I'm passionate about outdoor fieldwork and would ideally like work in a career with ~50% field work. </p>
-        </div>
-
-        <div class="col-md-4">
+       <div class="col-md-3">
           <img src="pics/leaves.jpg" height="250px">
        </div>
+        <div class="col-md-9" id="MyInterests">
+          <p> I hope to work in a challenging environment which involves teamwork, analytical problem solving, hands-on solutions, and promotes personal growth and skill development <br> <br> My main interests revolve around conservation, ecological sensitivities, geomatics, and using geographical patterns to solve environmental issues.  I'm passionate about outdoor fieldwork and would ideally like work in a career with 50% field work. </p>
+        </div>
       </div>
     </div>
         <!--/Bottom Row-->
@@ -112,7 +188,7 @@
                   <img src="pics/NCC2jpg.jpg" height="325px"                                                        onmouseover="this.src='pics/NCC2jpg2.jpg';"                                                      onmouseout="this.src='pics/NCC2jpg.jpg';">
                 </div>
                 <div class="col-md-4">
-                  <img src="pics/madlab2jpg.jpg" height="325px"                                                     onmouseover="this.src='pics/madlab2jpg2.jpg';"                                                  onmouseout="this.src='pics/madlab2jpg.jpg';">>
+                  <img src="pics/madlab2jpg.jpg" height="325px"                                                     onmouseover="this.src='pics/madlab2jpg2.jpg';"                                                  onmouseout="this.src='pics/madlab2jpg.jpg';">
                 </div>
               </div>
               <div class="row">
@@ -131,7 +207,7 @@
 <hr>
       <footer>
       <div class="container">
-        <p>&copy; Company 2014</p>
+        <p>&copy; Melanie Wagar 2016</p>
       </div>
       </footer>
 
@@ -142,5 +218,7 @@
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Hidden Navbar JS -->
+      <script src="js/hidden-nav.js"></script>
   </body>
 </html>
