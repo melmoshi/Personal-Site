@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+      
+      
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,18 +33,39 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
       
-      <!-- Google Font Source Sans Pro -->
-      <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
- 
-  </head>
-
-    
-    
-    
-    
+    <!-- Google Font Source Sans Pro -->
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+   
+  </head>    
     
     
   <body>
+        
+  
+      
+      
+        <!-- Main jumbotron-->
+    <div class="jumbotron">
+      <div class="container">
+        <div id="object" class="fadeIn">
+          <h1>Melanie Wagar</h1>
+          <p>B.Sc. Environmental Science</p>
+    <!-- ICONS  -->
+            <ul class="list-inline spaced">
+                <li><a href="https://ca.linkedin.com/in/mjwagar" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>                        </li>
+                <li><a href="resume.pdf" target="_blank" title="Resume" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');"><i class="fa fa-file-text-o fa-3x"></i></a>
+                </li>
+                <li><a href="mailto:melaniejwagar@gmail.com" title="Email me" alt="Email Me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
+                </li>
+            </ul>
+            <a class="smoothScroll" href="#about"><i class="fa fa-angle-down fa-5x"></i></a>
+    <!-- End Icons-->
+        </div>
+      </div>
+    </div>
+        <!--End Jumbotron-->
+
+  
       
                 <!---------------------------------->
                 <!---------------NAVBAR-------------->
@@ -65,21 +88,11 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#Academia">Academic Bacground</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#Interests">Interests</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#Portfolio">Portfolio</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#Contact">Contact</a>
-                    </li>
+                    <li><a class="smoothScroll" href="#about">About</a></li>
+                    <li><a class="smoothScroll" href="#Education">Academic Bacground</a></li>
+                    <li><a class="smoothScroll" href="#Interests">Interests</a></li>
+                    <li><a class="smoothScroll" href="#Experience">Experience</a></li>
+                    <li><a class="smoothScroll" href="#Contact">Contact</a></li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -89,34 +102,7 @@
       
       <!--End NavBar-->
       
-      
-        <!-- Main jumbotron-->
-    <div class="jumbotron">
-      <div class="container">
-        <div id="object" class="fadeIn">
-          <h1>Melanie Wagar</h1>
-          <p>B.Sc. Environmental Science</p>
-    <!-- ICONS  -->
-            <ul class="list-inline spaced">
-                <li><a href="https://ca.linkedin.com/in/mjwagar" target="_blank" title="LinkedIn" alt="LinkedIn"><i class="fa fa-linkedin-square fa-3x"></i></a>                        </li>
-                <li><a href="resume.pdf" target="_blank" title="Resume" class="resume space-m" onClick="ga('send', '_trackEvent', 'Links', 'Resume', 'Resume top');"><i class="fa fa-file-text-o fa-3x"></i></a>
-                </li>
-                <li><a href="mailto:melaniejwagar@gmail.com" title="Email me" alt="Email Me" target="_blank" onClick="ga('send', '_trackEvent', 'Links', 'Email', 'Email top');"><i class="fa fa-envelope-o fa-3x"></i></a>
-                </li>
-            </ul>
-            <i class="fa fa-angle-down fa-5x"></i>
-    <!-- End Icons-->
-        </div>
-      </div>
-    </div>
-        <!--End Jumbotron-->
 
-      
-        <!--Contents-->
-  
-      
-      
-        <!--End Contents-->
       
                 <!---------------------------------->
                 <!---------------ABOUT-------------->
@@ -140,7 +126,8 @@
         
         <!--Middle Row "Education" Section-->
 
-    <div class="Education">
+    <div id="Education">
+        <br>
     <h3>Academic Background</h3>
       <div class="row">
           <div class="col-md-4 school">
@@ -158,14 +145,15 @@
         
 
         <!--Bottom Row "About" Section-->
-    <div class="Interests">
+    <div id="Interests">
+        <br>
     <h3>Interests</h3>
       <div class="row">
        <div class="col-md-3">
           <img src="pics/leaves.jpg" height="250px">
        </div>
         <div class="col-md-9" id="MyInterests">
-          <p> I hope to work in a challenging environment which involves teamwork, analytical problem solving, hands-on solutions, and promotes personal growth and skill development <br> <br> My main interests revolve around conservation, ecological sensitivities, geomatics, and using geographical patterns to solve environmental issues.  I'm passionate about outdoor fieldwork and would ideally like work in a career with 50% field work. </p>
+          <p> My goal is to work in a challenging environment which involves teamwork, analytical problem solving, hands-on solutions, and promotes personal growth and skill development <br> <br> My main interests include conservation, ecological sensitivities, geomatics, and using geographical patterns to solve environmental issues.  I'm passionate about outdoor fieldwork and would ideally like to work in a career with 50% field work. </p>
         </div>
       </div>
     </div>
@@ -177,7 +165,7 @@
                 <!-------------EXPERIENCE----------->
                 <!---------------------------------->
            
-    <div class="experience">
+    <div class="experience" id="Experience">
         <h1>Experience</h1>
             <div class="container">
               <div class="row">
@@ -203,8 +191,6 @@
     </div>
 
       
-      
-<hr>
       <footer>
       <div class="container">
         <p>&copy; Melanie Wagar 2016</p>
@@ -212,13 +198,20 @@
       </footer>
 
     <!-- Bootstrap core JavaScript
-    ================================================== -->
+    ================================================== -->      
+      
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
     <!-- Hidden Navbar JS -->
-      <script src="js/hidden-nav.js"></script>
+    <script src="js/hidden-nav.js"></script>
+    <!-- Smooth Scroll -->
+    <script type="text/javascript" src="js/smoothscroll.js"></script>
+      
+      
   </body>
+    
+    
 </html>
