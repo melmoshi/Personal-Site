@@ -23,7 +23,7 @@ $(".fadeIn a[href^='#']").on('click', function(e) {
 // animate
    $('html, body').animate({
        scrollTop: $(hash).offset().top-78
-     }, 1000, function(){
+     }, 700, function(){
 // when done, add hash to url
        // (default click behaviour)
        window.location.hash = hash;

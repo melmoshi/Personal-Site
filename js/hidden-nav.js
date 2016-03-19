@@ -1,4 +1,3 @@
-(function ($) {
   $(document).ready(function(){
     
 	// hide .navbar first
@@ -19,4 +18,3 @@
 	});
 
 });
-  }(jQuery));
