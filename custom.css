@@ -21,6 +21,8 @@ body {
 .navbar {
     background-color: #1D3557;
     border-color: #1D3557;
+    font-family: 'News Cycle', sans-serif;
+    font-size: 19px;
 }
 
 
@@ -216,6 +218,28 @@ h3 {
 
 /* ---------------- */
 
+#cf {
+  position:relative;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
+}
+
+.row {
+    display: block;
+}
+
 .experience h1 {
     vertical-align: middle;
     font-family: 'Source Sans Pro', sans-serif;
@@ -226,7 +250,7 @@ h3 {
     background-color: #A8DADC;
     background-attachment: fixed;
     background-size: cover;
-	height: 100vh;
+	height: 100%;
     text-align: center;
     margin: 0;
 }
